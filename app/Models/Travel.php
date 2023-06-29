@@ -22,10 +22,9 @@ class Travel extends Model
         'description',
         'num_of_days'
     ];
-
     public function tours(): HasMany
     {
-        $this->hasMany(Tour::class);
+        return $this->hasMany(Tour::class);
     }
 
     public function sluggable(): array
@@ -49,4 +48,9 @@ class Travel extends Model
     {
         return $this->num_of_days - 1;
     }
+
+    // public function getRouteKeyName()
+    // {
+    //     return 'slug';
+    // }
 }

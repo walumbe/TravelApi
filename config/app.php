@@ -31,6 +31,11 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'paginationPerPage' => [
+        'tours' => 15, 
+    ],
+    
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
